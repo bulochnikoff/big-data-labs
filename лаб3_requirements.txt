@@ -1,0 +1,7 @@
+pandas
+pyarrow
+duckdb
+matplotlib
+dbt-core
+dbt-duckdb
+great_expectations==0.18.19

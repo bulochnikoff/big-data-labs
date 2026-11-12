@@ -1,0 +1,17 @@
+name: lab6-manifests
+
+on:
+  push:
+    paths:
+      - "лаб6_*.yaml"
+      - "лаб6_check_manifests.py"
+      - ".github/workflows/lab6_manifests.yml"
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check spot share in the manifests
+        run: python лаб6_check_manifests.py
